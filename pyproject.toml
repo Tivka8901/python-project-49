@@ -4,8 +4,8 @@ packages = [
 ]
 name = "hexlet-code890111"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "A short description of the package."
+authors = ["Тиунов Даниил <danilmiler8901@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -13,9 +13,18 @@ python = "^3.11"
 prompt = "^0.4.1"
 
 
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+pytest = "^6.0.0"
+pytest-mock = "*"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression_launcher:play_game"
+brain-prime = "brain_games.scripts.brain_prime_launcher:play_game"
