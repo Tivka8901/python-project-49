@@ -19,3 +19,4 @@ def generate_question_answer():
 
     return question, correct_answer
 
+

@@ -21,3 +21,7 @@ def play_game(description, generate_round):
             return
 
     print(f'Congratulations, {name}!')
+
+
+def run_game():
+    return None
